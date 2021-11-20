@@ -1,0 +1,108 @@
+table,th,td{
+    padding:10px;
+    border:1px solid black;
+    border-collapse: collapse;
+}
+tr:nth-child(odd){
+    background-color: #03fcd7;
+}
+tr:nth-child(even){
+    background-color: #039dfc;
+}
+.dropdown{
+    display: none;
+}
+.wrapper:hover .dropdown{
+    display: initial;
+}
+.dropdown button{
+    display: block;
+}
+ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #87b7df;
+    
+  }
+  
+  body {
+      background-color: rgb(252, 217, 173);
+  }
+
+  div {
+      margin: 300px 630px;
+  }
+  
+  ul li {
+    display: block;
+    position: relative;
+    float: left;
+    background: #838de6;
+  }
+  
+  /* This hides the dropdowns */
+  
+  
+  li ul { 
+      display: none;
+     }
+  
+  ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+  }
+  
+  ul li a:hover { 
+      background: #6277ee;
+     }
+  
+  /* Display the dropdown */
+  
+  
+  li:hover > ul {
+    display: block;
+    position: absolute;
+  }
+  
+  li:hover li {
+       float: none;
+     }
+  
+  li:hover a { 
+      background: #162850; 
+    }
+  
+  li:hover li a:hover {
+       background: #86a3c0;
+     }
+  
+  .main-navigation li ul li {
+       border-top: 0;
+     }
+  
+  /* Displays second level dropdowns to the right of the first level dropdown */
+  
+  
+  ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+  
+  /* Simple clearfix */
+  
+  
+  
+  ul:before,
+  ul:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  
+  ul:after {
+      clear: both;
+     }
